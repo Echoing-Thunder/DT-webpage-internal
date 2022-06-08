@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../images/fleetrhind.png");
+  background-size:100%;
+  background-position: 0 -68%;
+}
+
+/* Navbar-Related CSS */ 
+#navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 9vh;
+    background-color: #92278F;
+    display: flex;
+    z-index: 1;
+  }
+
+#logo {
+  background: transparent;
+}
+
+#account {
+  width: 8vh;
+  margin-top: 7%;
+}
+
+#divider {
+  width: 200px;
+}
+
+.divider {
+  margin: 30px;
+}
+
+.spacer {
+  width: 2.6%;
+}
+
+/* REMINDER - Edit all of this stuff later so it works with non-fullscreen/screens without the same resolution as mine. This should just involve using percentages instead of set numbers for size and margin values */
+
+.button {
+  background-color: #92278F;
+  /* top right bottom left */
+  padding: 2.5vh 4.4% 0vh 4.4%;
+  margin-left: 40px;
+}
+
+.button:hover {
+  background-color: #5b1058;
+}
+
+.buttonText {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: white;
+  text-decoration:none;
+  font-size:1.45vw;
+}
+
+#employeePortal {
+  padding: 2.5vh -15px 0vh -15px;
+}
+
+/* Dropdown-Related CSS */
+.dropbtn {
+  background-color: #92278F;
+  color: white;
+  padding: 2.5vh 70px 2.4vh 70px;
+  font-size: 1.45vw;
+  border: none;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.about-content {
+  display: none;
+  position: absolute;
+  background-color: #92278F;
+  min-width: 230px;
+  z-index: 1;
+
+  top:9vh;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.support-content {
+  display: none;
+  position: absolute;
+  background-color: #92278F;
+  min-width: 218px;
+  z-index: 1;
+  top:9vh;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.about-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.support-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.about-content a:hover {background-color: #5b1058;}
+
+.support-content a:hover {background-color: #5b1058;}
+
+.dropdown:hover .about-content {display: block;}
+
+.dropdown:hover .support-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #5b1058;}
+
+.main-image {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/*The large image on the homepage and the text on top of it */
+#homebackground {
+  margin-left: -8px;
+  margin-top: -60px;
+}
+
+#main-center-text {
+  position: relative;
+  top: 180px;
+  font-size: 54px;
+}
+
+#sub-center-text {
+  position: relative;
+  top: 190px;
+  width: 70%;
+  left: 16%;
+  font-size: 22px;
+}
+
+#order-button {
+  position: relative;
+  border-radius: 25px;
+  top: 220px;
+  left:40%;
+  width: 12.5%;
+  padding: 2.5vh 60px 2.5vh 60px;
+  background-color: #FCB040;
+  border: none;
+  z-index: 900;
+}
+
+#order-text {
+  color: black;
+  text-decoration:none;
+  font-size:26px;
+}
+
+#mainimage {
+  position: fixed;
+  z-index: 0;
+}
+
+#disclaimer-text {
+  font-size:10px;
+  color:white;
+  position: relative;
+  text-align: left;
+  top: 365px;
+  width: 70%;
+  left: 1.4%;
+}
+
+/* The news section under the large image  */
+
+.under-image {
+  width:100%;
+  height: 340px;
+  position: relative;
+  top: 370px;
+  background-color:white;
+}
+
+#orange1 {
+  width: 50%;
+  height: 0.35%;
+  background-color: orange;
+  position: relative;
+  top: 4%;
+  left: 9%;
+}
+
+#orange2 {
+  width: 50%;
+  height: 0.35%;
+  background-color: orange;
+  position: relative;
+  top: 10%;
+  left: 50%;
+}
+
+#recent-news {
+  color: black;
+  font-size: 24px;
+  position: relative;
+  text-align: left;
+  padding-left: 9.2%; 
+  top: 4%;
+  width: 40%;
+}
+
+.article {
+  position:relative;
+  text-align:left;
+  left:9.2%;
+  padding-top: 1%;
+  top:4%;
+  color:black;
+  width:40%;
+  flex: 0 0 18vw;
+}
+
+.date {
+  font-size: 12px;
+  margin-top:0.5%;
+  width:90%;
+}
+
+.title {
+  font-size: 21px;
+  width:90%;
+}
+
+.description {
+  position:relative;
+  top:0.3%;
+  font-size: 14px;
+  width:90%;
+  margin-top:0.3%;
+}
+
+.THENEWSPAPER {
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+  height: auto;
+  overflow-x:scroll;
+}
+
+.THENEWSPAPER::-webkit-scrollbar {
+  display: none;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 4vh;
+  background-color: #92278F;
+  display: flex;
+  z-index: 2;
+}
+
+#foottext {
+  color:white;
+  margin-top:0.3%;
+  margin-left: 2%;
+}
+
+#ToS {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
+.ship-panel{
+  width: 1000px;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 2%;
+  display: flex;
+}
+
+.ship-image{
+  margin: 2%;
+  width: 40%;
+}
+
+.ship-title {
+  font-size:44px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.orange3 {
+  width: 420px;
+  height: 2px;
+  background-color: #FCB040;
+}
+
+.desc {
+  display: flex;
+}
+
+.ship-desc1, .ship-desc2{
+  margin-top:0.5%;
+  width: 450px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 24px;
+}
+
+#shipstop {
+  background-image: url("../images/fleettop.png");
+  position:fixed;
+  background-repeat: no-repeat;
+  background-position:center; 
+  height:20%;
+  width:100%;
+  background-size:50%;    
+}
+
+#sttext {
+  font-size:40px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color:white;
+  text-align:center;
+  margin-top:5%;
+}
+
+/* #shipsleft {
+  background-image: url("../images/fleetrhind.png");
+  position:relative;
+  background-repeat:no-repeat;
+  background-position: left;
+  height:120%;
+  width:100%;
+  background-size:100%;
+} */
